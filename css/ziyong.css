@@ -1,0 +1,90 @@
+
+.bg{
+	background-color: rgba(0,0,0,0.5);
+	height: 100px;
+	line-height: 100px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0 !important;
+	z-index: 9999;
+}
+.padding{
+	padding-top: 30px;
+}
+.bg a{
+	color: #FFF;
+	margin: 0 10px;
+}
+@media only screen and (max-width:991px ) {
+	.xin img{
+		height: 30px;
+		margin: 0 auto; 
+	}
+}
+.da{
+	position: relative;
+	overflow: hidden;
+}
+.da img.i1{
+	animation:donghua1 6s infinite linear;
+}
+.da img.i2{
+	animation: donghua2 6s infinite linear;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+@keyframes donghua1{
+	0%{ opacity: 1;}
+	33.33%{ opacity: 0;}
+	66.66%{opacity: 0;}
+	100%{ opacity: 1;}
+}
+@keyframes donghua2{
+	0%{ opacity: ;0}
+	33.33%{ opacity: 1;}
+	66.66%{opacity: 1;}
+	100%{ opacity: 0;}
+}
+.xin1{
+	padding: 8px 0;
+}
+.xin1 div{
+	height: 208px;
+	line-height: 208px;
+	color: #FFF;
+	padding: 0 5px;
+}
+.xin1 div:nth-child(1){
+	background: url(../img/share_img.png) no-repeat center top;
+	background-clip: content-box;
+}
+.xin1 div:nth-child(2){
+	background: url(../img/event_img.png) no-repeat center top;
+	background-clip: content-box;
+}
+
+.xin1 div:nth-child(3){
+	background: url(../img/family_img.png) no-repeat center top;
+	background-clip: content-box;
+}
+.xin1 div:nth-child(4){
+	background: url(../img/active_img.jpg) no-repeat center top;
+	background-clip: content-box;
+}
+@media only screen and (max-width:767px ) {
+	.xin1 div{
+		padding: 0;
+	}
+	.bg{
+		height: 50px;
+	}
+	.padding{
+	padding-top: 10px;
+}
+.xin1{
+	padding: 0;
+}
+}
